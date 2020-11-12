@@ -7,6 +7,8 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
   - install_elk.yml
+  - filebeat-playbook.yml
+  - metricbeat-playbook.yml
 
 This document contains the following details:
 - Description of the Topologu
@@ -43,7 +45,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the jump box machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 13.66.161.189
+- Jump Box '13.66.161.189'
 
 Machines within the network can only be accessed by each other.
 - Access to the ELK VM was only allowed from the Jump Box whose IP address is 13.66.161.189.
